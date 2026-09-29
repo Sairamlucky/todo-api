@@ -1,7 +1,8 @@
 const todoList = document.getElementById("todoList");
 const todoInput = document.getElementById("todoInput");
 const message = document.getElementById("message");
-
+const response = await fetch("http://localhost:3000/todos");
+const data = await response.json();n
 
 // Show message
 function showMessage(text, type) {
